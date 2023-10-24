@@ -1,0 +1,55 @@
+@import url(../body/style.css);
+@import url(../footer/style.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+nav {
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav ul li:hover {
+  color: #0082F4;
+}
+nav button {
+  padding: 15px 25px;
+  background-color: #0082F4;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+@media (min-width: 448px) and (max-width: 769px) {
+  nav {
+    padding: 20px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav button {
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 447px) {
+  nav {
+    padding: 20px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav button {
+    padding: 10px 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

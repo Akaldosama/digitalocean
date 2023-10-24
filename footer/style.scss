@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+footer {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 50px 100px;
+
+    .child {
+        width: calc(100% / 4);
+
+        p {
+            margin: 12px 0px;
+        }
+    }
+}
+
+.footer_bar {
+    background: linear-gradient(180deg, #058AFF 0%, rgba(57, 55, 206, 0.87) 97.91%);
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+    .child {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        button {
+            padding: 12px 25px;
+            color: #058AFF;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+        }
+        img{
+            height: 30px;
+            width: 200px;
+        }
+    }
+}
+
+
+@media (min-width: 990px) and (max-width: 1200px){
+    footer{
+        padding: 50px 70px;
+    }
+    .footer_bar{
+        padding: 20px 70px;
+    }
+}
+
+
+@media (min-width: 770px) and (max-width: 989px){
+    footer{
+        padding: 50px 50px;
+    }
+    .footer_bar{
+        padding: 20px 50px;
+    }
+}
+
+
+@media (min-width: 448px) and (max-width: 769px){
+    footer{
+        padding: 50px 40px;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: start;
+        gap: 20px;
+        justify-content: center;
+        .child{
+            width: 200px;
+        }
+    }
+    .footer_bar{
+        padding: 20px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        .child{
+            text-align: center;
+            line-height: 25px;
+            img{
+                width: 150px;
+                height: 100%;
+            }
+            button{
+                padding: 3px 25px;
+            }
+        }
+    }
+}
+@media (max-width: 447px){
+    footer{
+        padding: 50px 40px;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        .child{
+            text-align: center;
+            width: 200px;
+        }
+    }
+    .footer_bar{
+        padding: 20px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        .child{
+            text-align: center;
+            line-height: 25px;
+            img{
+                width: 150px;
+                height: 100%;
+            }
+            button{
+                padding: 3px 25px;
+            }
+        }
+    }
+}
